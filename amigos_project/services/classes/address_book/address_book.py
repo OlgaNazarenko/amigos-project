@@ -9,15 +9,15 @@ from abc import ABC, abstractmethod
 
 class AddressBookABC(ABC):
     @abstractmethod
-    def add_record(self, record):
+    def add_record(self, record) -> str:
         pass
 
     @abstractmethod
-    def search_contacts(self, value):
+    def search_contacts(self, value) -> str:
         pass
 
     @abstractmethod
-    def save_to_file(self):
+    def save_to_file(self) -> None:
         pass
 
 
