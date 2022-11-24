@@ -7,7 +7,6 @@ from .birthday import Birthday
 from abc import ABC, abstractmethod
 
 
-# Made the __init__ an abstract method:
 class RecordABC(ABC):
     @abstractmethod
     def __init__(self, *args):
