@@ -14,35 +14,35 @@ class RecordABC(ABC):
         ...
 
     @abstractmethod
-    def add_address(self, address):
+    def add_address(self, address) -> str:
         pass
 
     @abstractmethod
-    def add_phone(self, phone):
+    def add_phone(self, phone) -> str:
         pass
 
     @abstractmethod
-    def add_email(self, email):
+    def add_email(self, email) -> str:
         pass
 
     @abstractmethod
-    def add_birthday(self, birthday):
+    def add_birthday(self, birthday) -> str:
         pass
 
     @abstractmethod
-    def update_phone(self, *args):
+    def update_phone(self, *args) > str | None:
         pass
 
     @abstractmethod
-    def delete_phone(self, phone):
+    def delete_phone(self, phone) > str | None:
         pass
 
     @abstractmethod
-    def update_address(self, address):
+    def update_address(self, address) -> Address:
         pass
 
     @abstractmethod
-    def format_contact(self):
+    def format_contact(self) -> str:
         pass
 
 
