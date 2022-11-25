@@ -4,8 +4,52 @@ from .address import Address
 from .phone import Phone
 from .birthday import Birthday
 
+from abc import ABC, abstractmethod
 
-class Record():
+
+class RecordABC(ABC):
+    @abstractmethod
+    def __init__(self, *args):
+        ...
+
+    @abstractmethod
+    def add_address(self, address):
+        pass
+
+    @abstractmethod
+    def add_phone(self, phone):
+        pass
+
+    @abstractmethod
+    def add_email(self, email):
+        pass
+
+    @abstractmethod
+    def add_birthday(self, birthday):
+        pass
+
+    @abstractmethod
+    def update_phone(self, old_phone, new_phone):
+        pass
+
+    @abstractmethod
+    def delete_phone(self, phone):
+        pass
+
+    @abstractmethod
+    def update_address(self, address):
+        pass
+
+    @abstractmethod
+    def format_contact(self):
+        pass
+
+    @abstractmethod
+    def __repr__(self):
+        pass
+
+
+class Record(RecordABC):
     def __init__(self,
                  name: str,
                  address: str = None,
