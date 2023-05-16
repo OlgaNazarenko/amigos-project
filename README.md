@@ -55,7 +55,6 @@ To run the Amigos Project on your local machine, follow these steps:
 5. After successfully installing the package, you can run the command '**bot-assistant**' in the console from anywhere in 
 your system.
 
-The Amigos Project should now be accessible in your web browser at http://localhost:5000/.
 
 ## Contributing
 
